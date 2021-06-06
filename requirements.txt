@@ -1,0 +1,8 @@
+wordcloud==1.8.1
+matplotlib==3.3.4
+numpy==1.19.5
+Pillow==8.2.0
+datetime==4.3
+google-api-python-client==2.7.0
+dataclasses==0.8
+
