@@ -24,14 +24,14 @@ def generate_word_cloud(results_dict: dict, date_list: List[str], num_search_res
                 title = results_dict.get(key)
                 title_split = title.split(' ')
 
-                for val in title_split:
-                    tokens = val.split(' ')
+                for word in title_split:
+                    word_split = word.split(' ')
 
                     # Converts word to lowercase
-                    for i in range(len(tokens)):
-                        tokens[i] = tokens[i].lower()
+                    for i in range(len(word_split)):
+                        word_split[i] = word_split[i].lower()
 
-                        word_input += " ".join(tokens) + " "
+                        word_input += " ".join(word_split) + " "
             except:
                 continue
 
